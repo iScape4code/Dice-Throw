@@ -1,0 +1,70 @@
+body{
+
+  background-color: #e8505b;
+  letter-spacing: 0.1em;
+  margin: 0;
+
+}
+h1{
+    font-family: 'Luckiest Guy';
+    font-size: 6em;
+    text-align: center;
+}
+
+p{
+  font-family: 'Luckiest guy';
+  font-size: 2em;
+  width:  50%;
+  margin: 0;
+}
+
+table {
+  width: 10em;
+}
+
+
+.container{
+  margin: 0;
+}
+.dice{
+  position: relative;
+
+  width: 25%;
+
+  display: inline-block;
+
+  margin-bottom: 2em;
+
+}
+
+.diceLeft{
+
+padding-left: 20em;
+padding-right: 3.5em;
+
+}
+
+.diceRight{
+
+  padding-right: 18em;
+  padding-left: 3.7em;
+
+}
+
+.image{
+  width: 8em;
+}
+
+.player{
+
+  font-family: 'Luckiest guy';
+  font-size: 2em;
+
+}
+
+.start{
+  font-family: 'luckiest guy';
+  padding: 1em 4em;
+  text-align: center;
+  margin-left: 45em;
+}

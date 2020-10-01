@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dice Throw</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Let's Start !</h1>
+
+      <div class="dice diceLeft">
+        <p>player 1<p>
+          <img class="image img1" src="images/dice6.png" alt="">
+      </div>
+
+
+      <div class="dice diceRight">
+        <p>player 2<p>
+          <img class="image img2" src="images/dice6.png" alt="">
+      </div>
+
+      <button class="start" onclick="play()" name="button">Start</button>
+
+
+    </div>
+
+  <script>
+  function play(){
+    var randomNumber1 = Math.floor(Math.random()*6)+1;
+    var randomImage1= "images/dice"+randomNumber1+".png";
+    document.querySelector(".img1").src=randomImage1;
+
+    var randomNumber2 = Math.floor(Math.random()*6)+1;
+    var randomImage2= "images/dice"+randomNumber2+".png";
+    document.querySelector(".img2").src=randomImage2;
+
+    if (randomNumber1 == randomNumber2) {
+
+    document.querySelector("h1").innerText = "You Both DRAW!";
+
+    }
+
+    else if (randomNumber1 > randomNumber2){
+
+        document.querySelector("h1").innerText = "Player 1 WON!";
+    }
+
+    else {
+
+        document.querySelector("h1").innerText = "Player 2 WON!";
+    }
+  }
+
+  </script>
+
+
+
+
+
+
+  </body>
